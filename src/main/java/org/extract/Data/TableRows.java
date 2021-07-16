@@ -3,8 +3,8 @@ package org.extract.Data;
 public class TableRows {
 
     private boolean complete;
-    private long eeTaskId;
-    private long taskId;
+    private String eeTaskId;
+    private String taskId;
     private String taskDescription;
     private String taskType;
     private String taskFor;
@@ -12,7 +12,7 @@ public class TableRows {
     private String timeCompleted;
     private boolean startTask;
 
-    public TableRows(boolean complete, long eeTaskId, long taskId, String taskDescription, String taskType,
+    public TableRows(boolean complete, String eeTaskId, String taskId, String taskDescription, String taskType,
                      String taskFor, String completedBy, String timeCompleted, boolean startTask) {
         this.complete = complete;
         this.eeTaskId = eeTaskId;
@@ -28,14 +28,14 @@ public class TableRows {
 
     @Override
     public String toString() {
-        return  "complete=" + complete +
-                ", eeTaskId=" + eeTaskId +
-                ", taskId=" + taskId +
-                ", taskDescription='" + taskDescription + '\'' +
-                ", taskType='" + taskType + '\'' +
-                ", taskFor='" + taskFor + '\'' +
-                ", completedBy='" + completedBy + '\'' +
-                ", timeCompleted='" + timeCompleted + '\'' +
-                ", startTask=" + startTask;
+        return this.complete + "," +
+                this.eeTaskId + "," +
+                this.taskId + "," +
+                this.taskDescription + "," +
+                this.taskType + "," +
+                this.taskFor + "," +
+                this.completedBy + "," +
+                this.timeCompleted + "," +
+                this.startTask + "\n";
     }
 }

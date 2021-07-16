@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Paycom_Checklist_Extraction" />
+        <module name="PaycomChecklistExtraction" />
       </profile>
     </annotationProcessing>
   </component>
